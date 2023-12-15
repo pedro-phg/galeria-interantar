@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.content {
+  background-color: #161e29;
+}
+
+.pictures__grid {
+  margin: 64px 128px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  object-fit: cover;
+  position: relative;
+}
+
+.picture__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
